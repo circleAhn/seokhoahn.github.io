@@ -22,6 +22,8 @@
       --section-accent:#1d4ed8;     /* blue */
       --section-accent-soft:#eff6ff;
 
+      --section-accent-red:#d81d1d;     /* red */
+
       --max: 980px;
 
       /* Spacing */
@@ -289,6 +291,19 @@
       transform: translateY(-1px);
     }
 
+    .redtag{
+      display:inline-block;
+      font-size: 11.6px;
+      padding: 1px 6px;
+      border-radius: 999px;
+      border: 1px solid rgba(216, 29, 54, 0.18);
+      background: rgba(216, 29, 76, 0.06);
+      color: var(--section-accent-red);
+      font-weight: 750;
+      margin-left: 6px;
+      transform: translateY(-1px);
+    }
+
     /* Publications controls */
     .pub-controls{
       display:flex;
@@ -357,7 +372,7 @@
     <header id="about">
       <!-- Replace with <img class="photo-img" src="assets/photo.jpg" alt="<strong>Seokho Ahn</strong>" /> if desired -->
       <div class="photo" aria-label="Profile photo placeholder">
-        <small>Profile photo<br/>140×140</small>
+        <small>Profile photo<br/>240×240</small>
       </div>
 
       <h1 class="name"><strong>Seokho Ahn</strong></h1>
@@ -456,11 +471,38 @@
       </div>
 
       <div class="list" id="pubList">
+        <div class="item pub" data-type="conference" data-year="2026" data-keywords="kdd recommend profile profiling user llm large language model kg knowledge graph">
+          <div class="dot" aria-hidden="true"></div>
+          <div>
+            <div class="title-row">
+              <div class="title">Enriching Semantic Profiles into Knowledge Graph for Recommender Systems Using Large Language Models<span class="redtag">BK IF4</span></div>
+              <div class="right">KDD 2026</div>
+            </div>
+            <div class="meta">
+              <span><strong>Seokho Ahn</strong>; Sungbok Shin; Young-Duk Seo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item pub" data-type="conference" data-year="2025" data-keywords="iccv diffusion personalized generation drum text image condition">
+          <div class="dot" aria-hidden="true"></div>
+          <div>
+            <div class="title-row">
+              <div class="title">Draw Your Mind: Personalized Generation via Condition-Level Modeling in Text-to-Image Diffusion Models<span class="redtag">BK IF4</span></div>
+              <div class="right">ICCV 2025</div>
+            </div>
+            <div class="meta">
+              <span>Hyungjin Kim; <strong>Seokho Ahn</strong>; Young-Duk Seo</span>
+            </div>
+          </div>
+        </div>
+
+
         <div class="item pub" data-type="conference" data-year="2025" data-keywords="aaai calibration sensor time-series iot">
           <div class="dot" aria-hidden="true"></div>
           <div>
             <div class="title-row">
-              <div class="title">Real-Time Calibration Model for Low-Cost Sensor in Fine-Grained Time Series</div>
+              <div class="title">Real-Time Calibration Model for Low-Cost Sensor in Fine-Grained Time Series<span class="redtag">BK IF4</span></div>
               <div class="right">AAAI 2025</div>
             </div>
             <div class="meta">
@@ -473,7 +515,7 @@
           <div class="dot" aria-hidden="true"></div>
           <div>
             <div class="title-row">
-              <div class="title">Topic-Aware Knowledge Graph with Large Language Models for Interoperability in Recommender Systems<span class="tag">Oral</span></div>
+              <div class="title">Topic-Aware Knowledge Graph with Large Language Models for Interoperability in Recommender Systems<span class="tag">Oral</span><span class="redtag">BK IF1</span></div>
               <div class="right">SAC 2025</div>
             </div>
             <div class="meta">
@@ -486,7 +528,7 @@
           <div class="dot" aria-hidden="true"></div>
           <div>
             <div class="title-row">
-              <div class="title">UKTA: Unified Korean Text Analyzer<span class="tag">Oral</span></div>
+              <div class="title">UKTA: Unified Korean Text Analyzer<span class="tag">Oral</span><span class="redtag">BK IF1</span></div>
               <div class="right">SAC 2025</div>
             </div>
             <div class="meta">
@@ -499,7 +541,7 @@
           <div class="dot" aria-hidden="true"></div>
           <div>
             <div class="title-row">
-              <div class="title">SenDaL: An Effective and Efficient Calibration Framework of Low-cost Sensors for Daily Life</div>
+              <div class="title">SenDaL: An Effective and Efficient Calibration Framework of Low-cost Sensors for Daily Life<span class="redtag">JCR top 5%</span></div>
               <div class="right">IoTJ 2024</div>
             </div>
             <div class="meta">
@@ -512,7 +554,7 @@
           <div class="dot" aria-hidden="true"></div>
           <div>
             <div class="title-row">
-              <div class="title">Morpheme-based Korean text cohesion analyzer</div>
+              <div class="title">Morpheme-based Korean text cohesion analyzer<span class="redtag">BK IF1</span></div>
               <div class="right">SoftwareX 2024</div>
             </div>
             <div class="meta">
@@ -525,7 +567,7 @@
           <div class="dot" aria-hidden="true"></div>
           <div>
             <div class="title-row">
-              <div class="title">RecKG: Knowledge Graph for Recommender Systems<span class="tag">Oral</span></div>
+              <div class="title">RecKG: Knowledge Graph for Recommender Systems<span class="tag">Oral</span><span class="redtag">BK IF1</span></div>
               <div class="right">SAC 2024</div>
             </div>
             <div class="meta">
@@ -551,7 +593,7 @@
           <div class="dot" aria-hidden="true"></div>
           <div>
             <div class="title-row">
-              <div class="title">Relation Modeling on Knowledge Graph for Interoperability in Recommender Systems<span class="tag">Oral</span></div>
+              <div class="title">Relation Modeling on Knowledge Graph for Interoperability in Recommender Systems<span class="tag">Oral</span><span class="redtag">BK IF1</span></div>
               <div class="right">SAC 2023</div>
             </div>
             <div class="meta">
